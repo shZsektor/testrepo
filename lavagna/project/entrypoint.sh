@@ -13,6 +13,8 @@ while [ $flag -eq 0 ]; do
     sleep 2
 done
 
+mv /app/lavagna/ /static_files
+
 java -Xms64m -Xmx128m -Ddatasource.dialect="${DB_DIALECT}" \
 -Ddatasource.url="${DB_URL}" \
 -Ddatasource.username="${DB_USER}" \
